@@ -27,5 +27,11 @@ const appMenuItems = <MenuItem>[
     link: '/cards',
     icon: Icons.credit_card
   ),
+  MenuItem(
+    title: 'Snackbar',
+    subTitle: 'Snack bar examples',
+    link: '/snackbar',
+    icon: Icons.message_rounded
+  ),
 ];
 
