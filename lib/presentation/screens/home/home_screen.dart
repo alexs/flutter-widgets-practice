@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets_practice/config/menu/menu_item.dart';
-import 'package:flutter_widgets_practice/presentation/screens/cards/cards_screen.dart';
 import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -56,7 +55,7 @@ class _CustomListTile extends StatelessWidget {
         //   )
         // );
         // Navigator.pushNamed(context, menuItem.link);
-        context.pushNamed(CardsScreen.name)
+        context.push(menuItem.link);
       },
     );
   }
