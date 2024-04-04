@@ -2,7 +2,7 @@ import 'package:flutter_widgets_practice/presentation/screens/screens.dart';
 import 'package:go_router/go_router.dart';
 
 // GoRouter configuration
-final app_router = GoRouter(
+final appRouter = GoRouter(
   initialLocation: '/',
   routes: [
     GoRoute(

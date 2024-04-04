@@ -38,19 +38,18 @@ class _ProgressView extends StatelessWidget {
 }
 
 class _ControllerProgressIndicator extends StatelessWidget {
-  const _ControllerProgressIndicator({super.key});
+  const _ControllerProgressIndicator();
 
   @override
   Widget build(BuildContext context) {
     return StreamBuilder(
       stream: Stream.periodic(const Duration( milliseconds: 300), (value){
-        print("Entraa");
         return (value * 2) / 100;
       }).takeWhile((value) => value < 1.0), 
       builder: (context,snapshot){
         final progressValue = snapshot.data ?? 0;
         return Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

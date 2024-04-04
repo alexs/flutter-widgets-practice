@@ -19,16 +19,12 @@ class CardsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Cards flutter examples'),
       ),
-      body: const _CardsView(),
+      body: _CardsView(),
     );
   }
 }
 
 class _CardsView extends StatelessWidget {
-  const _CardsView({
-    super.key,
-  });
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

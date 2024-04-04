@@ -95,9 +95,9 @@ class CustomButton extends StatelessWidget {
         child: InkWell(
           hoverColor: colors.secondary,
           onTap: () {},
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            child: const Text('Personalized button', style: TextStyle(color: Colors.white),)
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text('Personalized button', style: TextStyle(color: Colors.white),)
           ),
         ),
       ),
